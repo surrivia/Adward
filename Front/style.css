@@ -4,5 +4,75 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.squire{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.squire span:nth-child(1){
+   position: absolute;
+   top: 0;
+   left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#300006 50%, #8f0000 50%);
+    box-shadow: 0px 0px 50px rgb(255, 0, 0) , inset 0px 0px 50px rgb(255, 0, 0);
+    border-radius: 38% 62% 62% 38% / 62% 38% 62% 38%;
+    transition: 0.5s ;
+    animation: animate1 6s linear infinite;
+}
+.squire span:nth-child(2){
+   position: absolute;
+   top: 0;
+   left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#300006 50%, #8f0000 50%);
+    box-shadow: 0px 0px 50px rgb(255, 0, 0) , inset 0px 0px 50px rgb(255, 0, 0);
+    border-radius: 38% 62% 62% 38% / 62% 38% 62% 38%;
+    transition: 0.5s ;
+    animation: animate2 4s linear infinite;
+}
+.squire span:nth-child(3){
+   position: absolute;
+   top: 0;
+   left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#300006 50%, #8f0000 50%);
+    box-shadow: 0px 0px 50px rgb(255, 0, 0) , inset 0px 0px 50px rgb(255, 0, 0);
+    border-radius: 38% 62% 62% 38% / 62% 38% 62% 38%;
+    transition: 0.5s ;
+    animation: animate3 8s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes animate3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
